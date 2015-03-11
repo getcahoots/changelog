@@ -1,0 +1,80 @@
+{
+  "name": "cahoots-changelog",
+  "version": "1.0.0",
+  "description": "The web component for displaying the Cahoots changelog.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp",
+    "lint": "gulp lint",
+    "specs": "gulp specs",
+    "checkstyle": "gulp checkstyle",
+    "dev": "gulp dev",
+    "build": "gulp"
+  },
+  "pre-commit": [
+    "lint",
+    "checkstyle",
+    "specs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getcahoots/changelog.git"
+  },
+  "keywords": [
+    "cahoots.pw",
+    "changelog",
+    "web components"
+  ],
+  "author": "cahoots.pw",
+  "contributors": [
+    {
+      "name": "Alexander Barnickel",
+      "email": "alex@cahoots.ninja"
+    },
+    {
+      "name": "Jonas Bergmeier",
+      "email": "jonas@cahoots.ninja",
+      "url": "http://jonasbergmeier.net"
+    },
+    {
+      "name": "Oliver Sommer",
+      "email": "oliver@cahoots.ninja"
+    },
+    {
+      "name": "Julian Fath",
+      "email": "julian@cahoots.ninja"
+    },
+    {
+      "name": "André König",
+      "email": "andre@cahoots.ninja",
+      "url": "http://andrekoenig.info"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/getcahoots/changelog/issues"
+  },
+  "homepage": "https://github.com/getcahoots/changelog",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-minify-css": "^0.5.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "jshint-stylish": "^1.0.1",
+    "pre-commit": "^1.0.5",
+    "run-sequence": "^1.0.2",
+    "stringify": "^3.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "marked": "^0.3.3",
+    "webcomponents.js": "0.5.4-1",
+    "xhr": "^2.0.1"
+  }
+}
